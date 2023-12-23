@@ -7,7 +7,7 @@ import {
   VStack,
 } from '@chakra-ui/react'
 import React from 'react'
-import profileImg from '../../assets/profile/profilepic.png'
+import profileImg from '../../assets/profile/profilepic.jpg'
 
 const ProfileHeader = () => {
   return (
@@ -48,7 +48,7 @@ const ProfileHeader = () => {
           alignItems={'center'}
           w={'full'}
         >
-          <Text fontSize={{ base: 'sm', md: 'lg' }}>Gokul168_♥</Text>
+          <Text fontSize={{ base: 'sm', md: 'lg' }}>King_offical..♥</Text>
           <Flex
             gap={4}
             alignItems={'center'}
@@ -78,7 +78,7 @@ const ProfileHeader = () => {
               fontWeight={'bold'}
               mr={1}
             >
-              4
+              6
             </Text>
             Posts
           </Text>
@@ -115,7 +115,7 @@ const ProfileHeader = () => {
             fontSize={'16'}
             fontWeight={'bold'}
           >
-            Gokul168_♥
+            King_offical..♥
           </Text>
         </Flex>
         <Text

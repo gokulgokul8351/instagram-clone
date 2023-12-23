@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import UserHeader from './UserHeader'
 import { Box, Flex, Text, VStack } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'

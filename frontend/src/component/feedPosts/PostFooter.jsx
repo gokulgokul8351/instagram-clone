@@ -16,7 +16,7 @@ import {
 
 const PostFooter = ({ userName, isProfilePage }) => {
   const [like, setLike] = useState(false)
-  const [likeCount, setLikeCount] = useState(684)
+  const [likeCount, setLikeCount] = useState(0)
 
   const handleLike = () => {
     if (like) {
@@ -105,7 +105,6 @@ const PostFooter = ({ userName, isProfilePage }) => {
               color={'blue.700'}
               fontWeight={600}
               bg={'transparent'}
-              nm
               cursor={'pointer'}
               _hover={{
                 color: 'green',

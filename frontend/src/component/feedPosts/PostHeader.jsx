@@ -1,5 +1,6 @@
 import { Avatar, Box, Button, Flex, Text } from '@chakra-ui/react'
 import React from 'react'
+import { profilePic } from '../../utils/constants'
 
 const PostHeader = ({ userAvatar, userName }) => {
   return (
@@ -15,7 +16,7 @@ const PostHeader = ({ userAvatar, userName }) => {
       >
         <Avatar
           w={{ sm: '50px' }}
-          src={userAvatar}
+          src={profilePic.map((img) => img.pic)}
           alt="user profile image"
           size={'md'}
         />

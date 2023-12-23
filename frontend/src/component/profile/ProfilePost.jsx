@@ -131,6 +131,8 @@ const ProfilePost = ({ img }) => {
                 flex={1.5}
               >
                 <Image
+                  width={'full'}
+                  height={'90vh'}
                   src={img}
                   alt="profile post"
                 />

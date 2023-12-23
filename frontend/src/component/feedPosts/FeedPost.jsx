@@ -12,7 +12,7 @@ import { UserDetails } from '../../utils/constants'
 
 const FeedPost = () => {
   const [isLoading, setIsLoading] = useState(true)
-  const [data, setData] = useState()
+  const [data, setData] = useState([])
 
   useEffect(() => {
     setTimeout(() => {
@@ -27,10 +27,13 @@ const FeedPost = () => {
       },
     })
       .then((res) => res.json())
-      .then((result) => setData(result))
+      .then((result) => {
+        console.log(result)
+        setData(result)
+      })
       .catch((err) => console.log(err))
   }, [])
-
+  console.log(data)
   return (
     <Container
       maxW={'container.sm'}
@@ -80,14 +83,9 @@ const FeedPost = () => {
                   />
                 </div>
               ))
-            : UserDetails.map((post, index) => (
-                <div key={index}>
-                  <Post
-                    img={post.photo}
-                    bodyData={post.body}
-                    userName={post.postedBy.name}
-                    avatar={post.postedBy._id}
-                  />
+            : UserDetails.map((post, idx) => (
+                <div key={idx}>
+                  <Post />
                 </div>
               ))}
         </>

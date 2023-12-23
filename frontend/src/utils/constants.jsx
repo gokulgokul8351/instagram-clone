@@ -239,10 +239,12 @@ export const CommentLogo = () => (
 
 // user post
 
-import userImg1 from '../assets/profile/img1.png'
-import userImg2 from '../assets/profile/img2.png'
-// import userImg3 from '../assets/profile/img3.png'
-// import userImg4 from '../assets/profile/img4.png'
+import userImg1 from '../assets/profile/img1.jpg'
+import userImg2 from '../assets/profile/img2.jpg'
+import userImg3 from '../assets/profile/img3.png'
+import userImg4 from '../assets/profile/img4.jpeg'
+import userImg5 from '../assets/profile/img5.jpeg'
+import userImg6 from '../assets/profile/img6.jpeg'
 
 export const UserDetails = [
   {
@@ -278,10 +280,13 @@ export const NewUserDetails = [
 ]
 
 // profile => post
-import ProfilePostImg1 from '../assets/profile/img1.png'
-import ProfilePostImg2 from '../assets/profile/img2.png'
+
+import ProfilePostImg1 from '../assets/profile/img1.jpg'
+import ProfilePostImg2 from '../assets/profile/img2.jpg'
 import ProfilePostImg3 from '../assets/profile/img3.png'
-import ProfilePostImg4 from '../assets/profile/img4.png'
+import ProfilePostImg4 from '../assets/profile/img4.jpeg'
+import ProfilePostImg5 from '../assets/profile/img5.jpeg'
+import ProfilePostImg6 from '../assets/profile/img6.jpeg'
 
 export const profilePostImg = [
   {
@@ -295,6 +300,12 @@ export const profilePostImg = [
   },
   {
     img: ProfilePostImg4,
+  },
+  {
+    img: ProfilePostImg5,
+  },
+  {
+    img: ProfilePostImg6,
   },
 ]
 
@@ -320,3 +331,7 @@ export const commentDetails = [
     text: 'Good clone dude!',
   },
 ]
+
+import profileImg from '../assets/profile/profilepic.jpg'
+
+export const profilePic = [{ pic: profileImg }]

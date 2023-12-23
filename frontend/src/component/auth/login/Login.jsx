@@ -46,9 +46,9 @@ const Login = () => {
         if (data.error) {
           notifyError(data.error)
         } else {
-          notifySuccess(data.message)
           localStorage.setItem('jwt', data)
           navigate('/')
+          notifySuccess(data.message)
         }
       })
   }

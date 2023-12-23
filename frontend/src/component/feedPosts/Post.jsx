@@ -4,6 +4,7 @@ import PostFooter from './PostFooter'
 import { Box, Image, Text } from '@chakra-ui/react'
 
 const FeedPosts = ({ img, bodyData, userName, avatar }) => {
+  console.log(bodyData)
   return (
     <>
       <PostHeader

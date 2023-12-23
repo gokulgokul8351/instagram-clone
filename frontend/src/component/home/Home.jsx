@@ -12,7 +12,6 @@ const Home = () => {
         <Box
           flex={2}
           py={10}
-          // border={'2px solid blue'}
         >
           <FeedPost />
         </Box>

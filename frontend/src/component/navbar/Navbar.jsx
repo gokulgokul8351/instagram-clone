@@ -3,6 +3,7 @@ import React from 'react'
 import { Link as RouterLink, useNavigate } from 'react-router-dom'
 import { AiFillHome } from 'react-icons/ai'
 import { BiLogOut } from 'react-icons/bi'
+import { profilePic } from '../../utils/constants'
 import {
   CreatePostLogo,
   InstagramLogo,
@@ -37,11 +38,11 @@ const Navbar = () => {
         <Avatar
           size={'sm'}
           name="Gokul"
-          src=""
+          src={profilePic.map((img) => img.pic)}
         />
       ),
       text: 'Profile',
-      link: '',
+      link: '/profile',
     },
   ]
 

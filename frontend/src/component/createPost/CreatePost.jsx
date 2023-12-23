@@ -14,6 +14,7 @@ import React, { useEffect, useState } from 'react'
 import loadingImg from '../../assets/Instagram/privewImg.png' // preview img is loading
 import { toast } from 'react-toastify'
 import { useNavigate } from 'react-router-dom'
+import { profilePic } from '../../utils/constants'
 
 const CreatePost = () => {
   //
@@ -112,6 +113,7 @@ const CreatePost = () => {
                 <Avatar
                   name="Gokul"
                   size={'md'}
+                  src={profilePic.map((img) => img.pic)}
                 />
                 <Text fontWeight={'bold'}>Gokul168</Text>
               </Flex>
@@ -180,7 +182,6 @@ const CreatePost = () => {
                     color={'blue.700'}
                     fontWeight={700}
                     bg={'transparent'}
-                    nm
                     cursor={'pointer'}
                     _hover={{
                       color: 'darkBlue',
